@@ -194,6 +194,7 @@ cudaError_t CudaDeviceKeys::init(int blocks, int threads, int pointsPerThread, c
 	_blocks = blocks;
 	_threads = threads;
 	_pointsPerThread = pointsPerThread;
+	_step = 0;
 
 	size_t count = privateKeys.size();
 
